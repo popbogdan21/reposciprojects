@@ -2,10 +2,13 @@ public class PersonSorter {
     Persons [] personsToSort;
 
     public PersonSorter(Persons[] personsArrayToSort) {
-        this.personsToSort = personsArrayToSort;
-        this.sortArray(personsArrayToSort);
+        //this.personsToSort = personsArrayToSort;
+        Persons[] sortedArray;
+        sortedArray = this.sortArray(personsArrayToSort);
+        this.personsToSort = sortedArray;
+
     }
-    private void sortArray(Persons [] personsArrayToSort){
+    private Persons[] sortArray(Persons [] personsArrayToSort){
 
         boolean  swapped;
         do{
@@ -18,6 +21,7 @@ public class PersonSorter {
             }
 
         } while (swapped);
+        return personsArrayToSort;
     }
 
     private void swapPersons(Persons personsToSwap1, Persons personsToSwap2) {
