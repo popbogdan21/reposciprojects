@@ -31,8 +31,8 @@ public class Product {
         return unitsSold;
     }
 
-    public void setUnitsSold() {
-        this.unitsSold++;
+    public void setUnitsSold(int unitsSold) {
+        this.unitsSold+=unitsSold;
     }
 
     @Override

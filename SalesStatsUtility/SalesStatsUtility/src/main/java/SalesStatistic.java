@@ -16,8 +16,8 @@ public class SalesStatistic {
         Client client = getClientFromMap(sale.getClientName());
         Product product = getProductFromMap(sale.getProduct());
         client.setNumberOfOrders(client.getNumberOfOrders());
-        client.setTotalAmountSpent(sale.getPrice());
-        product.setUnitsSold();
+        client.setTotalAmountSpent(sale.getPrice()*sale.getOrderNr());
+        product.setUnitsSold(sale.getOrderNr());
     }
 
     /**
