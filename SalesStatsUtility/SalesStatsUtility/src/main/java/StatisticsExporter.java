@@ -21,7 +21,7 @@ public class StatisticsExporter {
         }
         String nl = System.getProperty("line.separator");
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(f))) {
-            List<Product> products = salesStatistic.getProductStatistics();
+            List<Product> products = salesStatistic.getProductStatistics(salesStatistic.getProductsHashMap());
             bw.append("Best selling products" + nl);
             for (int i = 0; i < products.size(); i++) {
                 bw.append((i + 1) + ". " + products.get(i).getProductName() + " - " +

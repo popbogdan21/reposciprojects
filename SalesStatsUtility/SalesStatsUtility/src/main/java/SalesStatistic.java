@@ -55,7 +55,7 @@ public class SalesStatistic {
      *
      * @return a sorted List<Product> by number of units sold
      */
-    public List<Product> getProductStatistics() {
+    public List<Product> getProductStatistics(HashMap<String, Product>  products) {
         Collection<Product> productsCollections = products.values();
         List<Product> productsList = new ArrayList<>(productsCollections);
         // I could have defined classes for Comparators but I never used the in-line declaration so I wanted to try it
@@ -109,5 +109,21 @@ public class SalesStatistic {
             }
         });
         return clientsList;
+    }
+
+    /**
+     * @return the Hashmap of the products
+     * added for unit testing
+     */
+    public HashMap<String, Product> getProductsHashMap(){
+        return products;
+    }
+
+    /**
+     * @return the HashMap of the clients
+     * added for unit testing
+     */
+    public HashMap<String, Client> getClientHashMap(){
+        return clients;
     }
 }
