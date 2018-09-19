@@ -1,0 +1,17 @@
+Best selling products
+1. Samsung Galaxy S9 - 20 units
+2. Samsung Galaxy J5 - 8 units
+3. Samsung Galaxy S8 - 7 units
+4. Samsung Galaxy S9+ - 7 units
+5. Apple iPhone SE - 2 units
+6. Apple iPhone X - 1 units
+...
+Top Returning Customers
+1. John Stuart  -  5 orders
+2. John Doe  -  2 orders
+3. Jane Doe  -  2 orders
+...
+Top Customers
+1. John Stuart - $2210.0
+2. Jane Doe - $1680.0
+3. John Doe - $340.0
